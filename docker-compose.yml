@@ -1,0 +1,18 @@
+version: '3'
+services:
+  data-service:
+    image: 'node:lts-alpine'
+    # build:
+    #   context: ./
+    user: 'root'
+    working_dir: /container/app/data-service
+    environment: 
+      - NODE_ENV=production
+    env_file:
+      - ./data-service/.env
+    volumes:
+      - ./:/container/app
+    ports:
+      - 3002:3002
+    command: npm run start:dev
+  # auth:
