@@ -24,7 +24,7 @@
     "@nestjs/common": "^6.0.0",
     "@nestjs/core": "^6.0.0",
     "@nestjs/jwt": "^6.1.1",
-    "@nestjs/platform-express": "^6.0.0",
+    "@nestjs/platform-express": "^9.2.1",
     "amazon-cognito-identity-js": "^3.0.15",
     "aws-sdk": "^2.524.0",
     "jsonwebtoken": "^8.5.1",
